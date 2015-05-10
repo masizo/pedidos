@@ -1,0 +1,500 @@
+/*****************************
+
+
+Autor: L.I. Jose Luis Moreno Robles;
+Empresa: Geekgenier +52 (311-191-49-79);
+Licencia: Libre;
+Tepic, Nayarit, México.
+"Usalo con sabiduria".
+
+
+/************* RESET ***********/
+body{
+	background: ;
+	width: 100%;
+	font-family: 'Rokkitt', serif;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.img{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+}
+
+.img-ajustada{ 
+	width: 100%;
+}
+
+.fondo{
+	background: grey;
+}
+
+
+/* Capas de recursos *********************************************************/
+
+.contenedor{
+	margin: 0 auto;
+}
+
+hr.separador {
+height: 2px;
+margin: 54px 0;
+background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+border: 0;
+}
+/********************************************************************************/
+
+
+
+/* Formato Texto*******************************************************************/
+
+		/*** Fuentes **/
+
+		.fuente1{font-family: 'Rokkitt', serif;}
+		.fuente2{font-family: 'Cherry Swash', cursive;}
+		.fuente3{font-family: 'Advent Pro', sans-serif;}
+		.fuente4{font-family: 'Alegreya', serif;}
+		.fuente5{font-family: 'Kite One', sans-serif;}
+		.fuente6{font-family: 'Finger Paint', cursive;}
+		.fuente7{font-family: 'Fauna One', serif;}
+		.fuente8{font-family: 'Londrina Shadow', cursive;}
+		.fuente9{font-family: 'Gudea', sans-serif;}
+		.fuente10{font-family: 'Ubuntu Mono', sans-serif;}
+
+		/***********************************/
+
+
+		/*** Tamaño ******/
+		.tam02{font-size: 0.2em;}
+		.tam04{font-size: 0.4em;}
+		.tam06{font-size: 0.6em;}
+		.tam08{font-size: 0.8em;}
+		.tam1{font-size: 1em;}
+		.tam11{font-size: 1.1em;}
+		.tam12{font-size: 1.2em;}
+		.tam13{font-size: 1.3em;}
+		.tam14{font-size: 1.4em;}
+		.tam15{font-size: 1.5em;}
+		.tam16{font-size: 1.6em;}
+		.tam17{font-size: 1.7em;}
+		.tam18{font-size: 1.8em;}
+		.tam19{font-size: 1.9em;}
+		.tam2{font-size: 2em;}
+		.tam25{font-size: 2.5em;}
+		.tam3{font-size: 3em;}
+		.tam35{font-size: 3.5em;}
+
+		/***********************************/
+
+
+.negritas{
+	font-weight: bold;
+}
+.texto{
+	font-family: 'Fauna One', serif;
+	text-align: justify;
+	padding: 0px 2%;
+}
+
+.blanco{
+	color: white;
+}
+
+.negro{
+	color: black;
+}
+
+.gris{
+	color: grey;
+}
+
+.grande{font-size: 1.3em;}
+
+
+.titulo{
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 3em;
+	text-align: center;
+}
+
+
+.titulo2{
+	font-family: 'Fauna One', cursive;
+	font-size: 2em;
+	text-align: center;
+}
+
+.titulo3{
+	font-family: 'Fauna One', cursive;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.centrado{text-align: center;}
+
+.izquierda{text-align: left;}
+
+.derecha{text-align: right;}
+
+.justificado{text-align: justify;}
+
+.sombreado{text-shadow: 1px 1px 3px black;}
+
+.romper{ word-wrap: break-word; }
+
+
+/********************************************************************************/
+
+
+
+/* Formato Capa*****************************************************************/
+
+.tamano-fijo{box-sizing: border-box;}
+
+.borde{border: 1px solid black;}
+.borde-superior{border-top: 1px solid black}
+.borde-inferior{border-bottom: 1px solid black}
+.borde-izquierdo{border-left: 1px solid black}
+.borde-derecho{border-right: 1px solid black}
+
+.sombra{box-shadow: 2px 2px 10px black;}
+
+.redondeado{border-radius: 8px;}
+
+.oculto{
+	height: 0;
+	overflow: hidden;
+}
+
+.float{
+	float: left;
+}
+
+.sin-fondo{
+	/*background: rgba(0,0,0,0);*/
+	background: white;
+}
+
+ 			/******** Altos   ********/
+
+ 			.hauto{height: auto;}
+
+ 			.h10{height: 10px;}
+ 			.h20{height: 20px;}
+ 			.h30{height: 30px;}
+ 			.h40{height: 40px;}
+ 			.h50{height: 50px;}
+ 			.h60{height: 60px;}
+ 			.h70{height: 70px;}
+ 			.h80{height: 80px;}
+ 			.h90{height: 90px;}
+ 			.h100{height: 100px;}
+
+ 			.h120{height: 120px;}
+ 			.h140{height: 140px;}
+ 			.h150{height: 150px;}
+ 			.h160{height: 160px;}
+ 			.h180{height: 180px;}
+ 			.h200{height: 200px;}
+
+ 			.h250{height: 250px;}
+ 			.h300{height: 300px;}
+ 			.h350{height: 350px;}
+ 			.h400{height: 400px;}
+ 			.h450{height: 450px;}
+ 			.h500{height: 500px;}
+ 			.h550{height: 550px;}
+ 			.h600{height: 600px;}
+ 			.h650{height: 650px;}
+ 			.h700{height: 700px;}
+ 			.h750{height: 750px;}
+ 			.h800{height: 800px;}
+ 			.h850{height: 850px;}
+ 			.h900{height: 900px;}
+ 			.h950{height: 950px;}
+ 			.h1000{height: 1000px;}
+
+
+
+ 			/******** Altos Minimos   ********/
+
+ 			.min-h10{min-height: 10px;}
+ 			.min-h20{min-height: 20px;}
+ 			.min-h30{min-height: 30px;}
+ 			.min-h40{min-height: 40px;}
+ 			.min-h50{min-height: 50px;}
+ 			.min-h60{min-height: 60px;}
+ 			.min-h70{min-height: 70px;}
+ 			.min-h80{min-height: 80px;}
+ 			.min-h90{min-height: 90px;}
+ 			.min-h100{min-height: 100px;}
+
+ 			.min-h120{min-height: 120px;}
+ 			.min-h140{min-height: 140px;}
+ 			.min-h150{min-height: 150px;}
+ 			.min-h160{min-height: 160px;}
+ 			.min-h180{min-height: 180px;}
+ 			.min-h200{min-height: 200px;}
+
+ 			.min-h250{min-height: 250px;}
+ 			.min-h300{min-height: 300px;}
+ 			.min-h350{min-height: 350px;}
+ 			.min-h400{min-height: 400px;}
+ 			.min-h450{min-height: 450px;}
+ 			.min-h500{min-height: 500px;}
+ 			.min-h550{min-height: 550px;}
+ 			.min-h600{min-height: 600px;}
+ 			.min-h650{min-height: 650px;}
+ 			.min-h700{min-height: 700px;}
+ 			.min-h750{min-height: 750px;}
+ 			.min-h800{min-height: 800px;}
+ 			.min-h850{min-height: 850px;}
+ 			.min-h900{min-height: 900px;}
+ 			.min-h950{min-height: 950px;}
+ 			.min-h1000{min-height: 1000px;}
+
+ 			/******** AnchosPX   ********/
+
+ 			.wx10{width: 10px;}
+ 			.wx20{width: 20px;}
+ 			.wx30{width: 30px;}
+ 			.wx40{width: 40px;}
+ 			.wx50{width: 50px;}
+ 			.wx60{width: 60px;}
+ 			.wx70{width: 70px;}
+ 			.wx80{width: 80px;}
+ 			.wx90{width: 90px;}
+ 			.wx100{width: 100px;}
+
+ 			.wx120{width: 120px;}
+ 			.wx140{width: 140px;}
+ 			.wx150{width: 150px;}
+ 			.wx160{width: 160px;}
+ 			.wx180{width: 180px;}
+ 			.wx200{width: 200px;}
+
+ 			.wx250{width: 250px;}
+ 			.wx300{width: 300px;}
+ 			.wx350{width: 350px;}
+ 			.wx400{width: 400px;}
+ 			.wx450{width: 450px;}
+ 			.wx500{width: 500px;}
+ 			.wx550{width: 550px;}
+ 			.wx600{width: 600px;}
+ 			.wx650{width: 650px;}
+ 			.wx700{width: 700px;}
+ 			.wx750{width: 750px;}
+ 			.wx800{width: 800px;}
+ 			.wx850{width: 850px;}
+ 			.wx900{width: 900px;}
+ 			.wx950{width: 950px;}
+ 			.wx1000{width: 1000px;}
+
+ 			/******** Anchos   ********/
+			.w1{width: 1%;}
+ 			.w2{width: 2%;}
+ 			.w3{width: 3%;}
+ 			.w4{width: 4%;}
+ 			.w5{width: 5%;}
+ 			.w6{width: 6%;}
+ 			.w7{width: 7%;}
+ 			.w8{width: 8%;}
+ 			.w9{width: 9%;}
+ 			.w10{width: 10%;}
+
+ 			.w12{width: 12%;}
+ 			.w14{width: 14%;}
+ 			.w16{width: 16%;}
+ 			.w18{width: 18%;}
+ 			.w20{width: 20%;}
+
+ 			.w25{width: 25%;}
+ 			.w30{width: 30%;}
+ 			.w35{width: 35%;}
+ 			.w40{width: 40%;}
+ 			.w45{width: 45%;}
+ 			.w50{width: 50%;}
+ 			.w55{width: 55%;}
+ 			.w60{width: 60%;}
+ 			.w65{width: 65%;}
+ 			.w70{width: 70%;}
+ 			.w75{width: 75%;}
+ 			.w80{width: 80%;}
+ 			.w85{width: 85%;}
+ 			.w90{width: 90%;}
+ 			.w95{width: 95%;}
+ 			.w100{width: 100%;}
+
+
+
+ 			/****** Opacidad ******/
+
+ 			.op10{opacity: .10;}
+ 			.op20{opacity: .20;}
+ 			.op30{opacity: .30;}
+ 			.op40{opacity: .40;}
+ 			.op50{opacity: .50;}
+ 			.op60{opacity: .60;}
+ 			.op70{opacity: .70;}
+ 			.op80{opacity: .80;}
+ 			.op90{opacity: .90;}
+
+
+ 			/******* Margenes *******/
+
+ 			.m1{margin-top: 1px;}
+ 			.m2{margin-top: 2px;}
+ 			.m4{margin-top: 4px;}
+ 			.m6{margin-top: 6px;}
+ 			.m8{margin-top: 8px;}
+ 			.m10{margin-top: 10px;}
+
+ 			.m10{margin-top: 10px;}
+ 			.m20{margin-top: 20px;}
+ 			.m40{margin-top: 40px;}
+ 			.m60{margin-top: 60px;}
+ 			.m80{margin-top: 80px;}
+ 			.m100{margin-top: 100px;}
+ 			.m120{margin-top: 120px;}
+ 			.m130{margin-top: 130px;}
+ 			.m140{margin-top: 140px;}
+ 			.m160{margin-top: 160px;}
+ 			.m180{margin-top: 180px;}
+ 			.m200{margin-top: 200px;}
+ 			.m300{margin-top: 300px;}
+
+ 			.ml10{margin-left: 10px;}
+ 			.ml20{margin-left: 20px;}
+ 			.ml40{margin-left: 40px;}
+ 			.ml60{margin-left: 60px;}
+ 			.ml80{margin-left: 80px;}
+ 			.ml100{margin-left: 100px;}
+ 			.ml120{margin-left: 120px;}
+ 			.ml130{margin-left: 130px;}
+ 			.ml140{margin-left: 140px;}
+ 			.ml160{margin-left: 160px;}
+ 			.ml180{margin-left: 180px;}
+ 			.ml200{margin-left: 200px;}
+ 			.ml300{margin-left: 300px;}
+
+ 			.mr10{margin-right: 10px;}
+ 			.mr20{margin-right: 20px;}
+ 			.mr40{margin-right: 40px;}
+ 			.mr60{margin-right: 60px;}
+ 			.mr80{margin-right: 80px;}
+ 			.mr100{margin-right: 100px;}
+ 			.mr120{margin-right: 120px;}
+ 			.mr130{margin-right: 130px;}
+ 			.mr140{margin-right: 140px;}
+ 			.mr160{margin-right: 160px;}
+ 			.mr180{margin-right: 180px;}
+ 			.mr200{margin-right: 200px;}
+ 			.mr300{margin-right: 300px;}
+
+ 			.mb10{margin-bottom: 10px;}
+ 			.mb20{margin-bottom: 20px;}
+ 			.mb40{margin-bottom: 40px;}
+ 			.mb60{margin-bottom: 60px;}
+ 			.mb80{margin-bottom: 80px;}
+ 			.mb100{margin-bottom: 100px;}
+ 			.mb120{margin-bottom: 120px;}
+ 			.mb130{margin-bottom: 130px;}
+ 			.mb140{margin-bottom: 140px;}
+ 			.mb160{margin-bottom: 160px;}
+ 			.mb180{margin-bottom: 180px;}
+ 			.mb200{margin-bottom: 200px;}
+ 			.mb300{margin-bottom: 300px;}
+
+
+
+
+/*************** Efectos de Seleccion **************/
+
+/* Animacion 1: Sombra */
+	.seleccion1{
+		box-shadow: none;
+		transition: all .5s;
+	}
+	.seleccion1:hover{
+		box-shadow: 0px 0px 5px black;
+		transition: all .5s;
+	}
+
+/* Animacion 2: Fondo negro Transparente */
+
+	.seleccion2:hover{
+		background: rgba(0,0,0,0.2)
+	}
+
+/* Animacion 3: Aumentar Tamaño de letra */
+
+	.seleccion3{
+		transition: all .5s;
+	}
+
+	.seleccion3:hover{
+		font-size: 1.1em;
+		transition: all .5s;
+	}
+
+/* Animacion 4: Aparecer y desaparecer */
+
+	.seleccion4{
+		
+	}
+
+	.seleccion4:hover{
+		-webkit-animation: agrandar 1.5s infinite ease;	
+		-moz-animation: agrandar 1.5s infinite ease;
+		-o-animation: agrandar 1.5s infinite ease;
+		-ms-animation: agrandar 1.5s infinite ease;
+	}
+
+	@-webkit-keyframes agrandar {
+		0% {opacity: 1;}
+		25%{opacity: .8;}
+		50%{opacity: 1;}
+		75%{opacity: .8;}
+		100%{opacity: 1;}
+	}
+	@-moz-keyframes agrandar {
+		0% {opacity: 1;}
+		25%{opacity: .8;}
+		50%{opacity: 1;}
+		75%{opacity: .8;}
+		100%{opacity: 1;}
+	}
+	@-0-keyframes agrandar {
+		0% {opacity: 1;}
+		25%{opacity: .8;}
+		50%{opacity: 1;}
+		75%{opacity: .8;}
+		100%{opacity: 1;}
+	}
+	@-ms-keyframes agrandar {
+		0% {opacity: 1;}
+		25%{opacity: .8;}
+		50%{opacity: 1;}
+		75%{opacity: .8;}
+		100%{opacity: 1;}
+	}
+
+
+
+
+
+
+
+

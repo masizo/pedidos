@@ -1,0 +1,24 @@
+.top-bar-section ul li:hover > a {
+    background: #ff7800;
+    color: white; 
+}
+
+ul.title-area li.active {
+    background: #ff7800;
+    color: white; 
+}
+
+.pagination{
+	text-align: center;
+}
+ul.pagination li.current{
+	background: #ff7800;
+}
+
+ul.pagination li.current a {
+	background: #ff7800;
+}
+
+ul.pagination li.current a:hover {
+	background: #ff7800;
+}
