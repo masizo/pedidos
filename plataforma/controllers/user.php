@@ -17,5 +17,11 @@ class Admin extends CI_Controller {
 			$this->load->view('footer');
 		}
 
+	function registro() {
+		$this->load->view('header');
+		$this->load->view('registro');
+		$this->load->view('footer');
+	}
+
 }
 ?>
