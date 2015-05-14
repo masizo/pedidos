@@ -9,5 +9,13 @@ class Admin extends CI_Controller {
 		$this->load->model('usuarios_model');
    	}
 
+   	function panel()
+		{
+			$this->load->view('header');
+			$this->load->view('header_application');
+			//$this->load->view('panel');
+			$this->load->view('footer');
+		}
+
 }
 ?>

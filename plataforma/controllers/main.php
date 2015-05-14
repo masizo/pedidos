@@ -9,8 +9,8 @@
     	}
 		function index()
 		{
-			$this->load->view('cabecera');
-			$this->load->view('cuerpo');
+			$this->load->view('header');
+			$this->load->view('principal');
 			$this->load->view('footer');
 		}
 
