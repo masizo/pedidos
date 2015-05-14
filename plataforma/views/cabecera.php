@@ -21,10 +21,10 @@
 
 		<!-- CSS -->
 		<!-- Bootstrap -->
-				
+		<link type="text/css" href="<? echo base_url('folders/css/bootstrap.css'); ?>" rel="Stylesheet" />
 		<!-- foundation -->
-		<link type="text/css" href="<? echo base_url('folders/css/foundation.css'); ?>" rel="Stylesheet" />	
-		<link type="text/css" href="<? echo base_url('folders/css/normalize.css'); ?>" rel="Stylesheet" />
+		
+
 		<!-- Geekgenier -->
 		<link type="text/css" href="<? echo base_url('folders/css/geekgenier.css'); ?>" rel="Stylesheet" />
 
@@ -66,12 +66,12 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>::: Radio Trece :::</title>
+		<title>::: Pedidos Nayarit :::</title>
 	
 	</head>
 	
 	<body>
-		<header> <h1>Pedidos Nayarit!</h1></header>
+		
 
 		 
 

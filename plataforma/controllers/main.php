@@ -10,6 +10,7 @@
 		function index()
 		{
 			$this->load->view('cabecera');
+			$this->load->view('cuerpo');
 			$this->load->view('footer');
 		}
 
