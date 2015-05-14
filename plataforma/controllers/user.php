@@ -17,6 +17,7 @@ class User extends CI_Controller {
 			$this->load->view('footer');
 		}
 
+
 		function panel()
 		{
 			$this->load->view('header');
@@ -24,6 +25,13 @@ class User extends CI_Controller {
 			$this->load->view('panel');
 			$this->load->view('footer');
 		}
+
+		function registro() {
+			$this->load->view('header');
+			$this->load->view('registro');
+			$this->load->view('footer');
+		}
+
 
 }
 ?>
