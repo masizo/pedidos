@@ -1,7 +1,7 @@
 <?php
 class Registro_model extends CI_Model{
 
-function registro_usuario($reg){
+function registro_usuario($nombre, $contra, $correo, $estado){
 		$reg  = array(
 		'nombre' => $nombre,
 		'contra' => $contra,
