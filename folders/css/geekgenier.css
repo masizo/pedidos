@@ -9,6 +9,9 @@ Tepic, Nayarit, México.
 
 
 /************* RESET ***********/
+html{
+	width: 97%;
+}
 body{
 	background: ;
 	width: 100%;
@@ -20,8 +23,17 @@ a{
 	color: black;
 }
 
+a:hover{
+	color: grey;
+
+}
+
 ul{
 	list-style-type: none;
+}
+
+.respeto{
+	box-sizing: border-box;
 }
 
 .img{
@@ -140,6 +152,12 @@ border: 0;
 	font-family: 'Fauna One', cursive;
 	font-size: 1.1em;
 	text-align: center;
+}
+
+.titulo4{
+	font-family: 'Fauna One', cursive;
+	font-size: 1em;
+	text-align: left;
 }
 
 .centrado{text-align: center;}
@@ -416,6 +434,93 @@ border: 0;
  			.mb180{margin-bottom: 180px;}
  			.mb200{margin-bottom: 200px;}
  			.mb300{margin-bottom: 300px;}
+
+
+ 			/******* Padding *******/
+
+ 			.p1{padding: 1px;}
+ 			.p2{padding: 2px;}
+ 			.p4{padding: 4px;}
+ 			.p6{padding: 6px;}
+ 			.p8{padding: 8px;}
+ 			.p10{padding: 10px;}
+
+ 			.p10{padding: 10px;}
+ 			.p20{padding: 20px;}
+ 			.p40{padding: 40px;}
+ 			.p60{padding: 60px;}
+ 			.p80{padding: 80px;}
+ 			.p100{padding: 100px;}
+ 			.p120{padding: 120px;}
+ 			.p130{padding: 130px;}
+ 			.p140{padding: 140px;}
+ 			.p160{padding: 160px;}
+ 			.p180{padding: 180px;}
+ 			.p200{padding: 200px;}
+ 			.p300{padding: 300px;}
+
+ 			.pt1{padding-top: 1px;}
+ 			.pt2{padding-top: 2px;}
+ 			.pt4{padding-top: 4px;}
+ 			.pt6{padding-top: 6px;}
+ 			.pt8{padding-top: 8px;}
+ 			.pt10{padding-top: 10px;}
+
+ 			.pt10{padding-top: 10px;}
+ 			.pt20{padding-top: 20px;}
+ 			.pt40{padding-top: 40px;}
+ 			.pt60{padding-top: 60px;}
+ 			.pt80{padding-top: 80px;}
+ 			.pt100{padding-top: 100px;}
+ 			.pt120{padding-top: 120px;}
+ 			.pt130{padding-top: 130px;}
+ 			.pt140{padding-top: 140px;}
+ 			.pt160{padding-top: 160px;}
+ 			.pt180{padding-top: 180px;}
+ 			.pt200{padding-top: 200px;}
+ 			.pt300{padding-top: 300px;}
+
+ 			.pl10{padding-left: 10px;}
+ 			.pl20{padding-left: 20px;}
+ 			.pl40{padding-left: 40px;}
+ 			.pl60{padding-left: 60px;}
+ 			.pl80{padding-left: 80px;}
+ 			.pl100{padding-left: 100px;}
+ 			.pl120{padding-left: 120px;}
+ 			.pl130{padding-left: 130px;}
+ 			.pl140{padding-left: 140px;}
+ 			.pl160{padding-left: 160px;}
+ 			.pl180{padding-left: 180px;}
+ 			.pl200{padding-left: 200px;}
+ 			.pl300{padding-left: 300px;}
+
+ 			.pr10{padding-right: 10px;}
+ 			.pr20{padding-right: 20px;}
+ 			.pr40{padding-right: 40px;}
+ 			.pr60{padding-right: 60px;}
+ 			.pr80{padding-right: 80px;}
+ 			.pr100{padding-right: 100px;}
+ 			.pr120{padding-right: 120px;}
+ 			.pr130{padding-right: 130px;}
+ 			.pr140{padding-right: 140px;}
+ 			.pr160{padding-right: 160px;}
+ 			.pr180{padding-right: 180px;}
+ 			.pr200{padding-right: 200px;}
+ 			.pr300{padding-right: 300px;}
+
+ 			.pb10{padding-bottom: 10px;}
+ 			.pb20{padding-bottom: 20px;}
+ 			.pb40{padding-bottom: 40px;}
+ 			.pb60{padding-bottom: 60px;}
+ 			.pb80{padding-bottom: 80px;}
+ 			.pb100{padding-bottom: 100px;}
+ 			.pb120{padding-bottom: 120px;}
+ 			.pb130{padding-bottom: 130px;}
+ 			.pb140{padding-bottom: 140px;}
+ 			.pb160{padding-bottom: 160px;}
+ 			.pb180{padding-bottom: 180px;}
+ 			.pb200{padding-bottom: 200px;}
+ 			.pb300{padding-bottom: 300px;}
 
 
 

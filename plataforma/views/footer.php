@@ -1,4 +1,3 @@
-</div> <!-- Cerrando contenedor -->
 
  <footer class="row">
         <div class="large-12 columns"><hr />
@@ -18,14 +17,12 @@
       <!-- End Footer -->
  
  
-    </div>
-  </div>
-  </div>
+   
 
            
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
  
   <script src="<? echo base_url('folders/js/bootstrap.js') ?>"></script>
   

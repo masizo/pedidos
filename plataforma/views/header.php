@@ -5,7 +5,7 @@
 <html lang="es" class="no-js" >
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		
 
 		<!-- Fuentes -->
 		<link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>
@@ -28,8 +28,7 @@
 		<!-- Geekgenier -->
 		<link type="text/css" href="<? echo base_url('folders/css/geekgenier.css'); ?>" rel="Stylesheet" />
 
-		<link type="text/css" href="<? echo base_url('folders/css/proyecto.css'); ?>" rel="Stylesheet" />
-
+		
 		
 
 
@@ -38,16 +37,6 @@
 		<!-- Bootstrap -->
 		
 		
-		<!-- Foundation -->
-		  <script>
-		  document.write('<script src=' +
-		  ('__proto__' in {} ? '<? echo base_url(); ?>/folders/js/vendor/zepto' : '<? echo base_url(); ?>/folders/js/vendor/jquery') +
-		  '.js><\/script>')
-		  </script>
-		<link rel="stylesheet" href="css/app.css" />
-		<script src="<? echo base_url('folders/js/vendor/custom.modernizr.js') ?>"></script>
-		<script src="<?php echo base_url('folders/js/foundation.min.js');?>" language="JavaScript"> </script>
-		<script src="<?php echo base_url('folders/js/vendor/zepto.js');?>" language="JavaScript"> </script>
 		
 
 		<!-- Plugin Compartir de Facebook -->
@@ -72,7 +61,7 @@
 	
 	<body>
 		
-
+	
 		 
 
 		
