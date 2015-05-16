@@ -33,7 +33,7 @@ class User extends CI_Controller {
 
 			
 				$this->form_validation->set_rules('nombre','Nombre','trim|required|min_length[3]|xss_clean');
-				$this->form_validation->set_rules('contra','Contraseña','trim|required|min_length[4]|matches[passconf]');
+				$this->form_validation->set_rules('contra','Contraseña','trim|required|min_length[4]|matches[ccontra]');
 				$this->form_validation->set_rules('ccontra','Confirmar Contraseña','trim|required|min_length[4]');
 				$this->form_validation->set_rules('correo','Correo','trim|required|valid_email');
 				$this->form_validation->set_rules('estado','Estado','trim|required|min_length[3]');
@@ -45,10 +45,12 @@ class User extends CI_Controller {
 	        		$estado = $this->input->post('estado');
 	        		
 	        		$this->registro_model->registro_usuario($nombre, $contra, $correo, $estado);
+	        		$this->load->view('panel');
+
 	        	} else {	
-	        		$this->load->view('header');
+	        		//$this->load->view('header');
 					$this->load->view('registro');
-					$this->load->view('footer');
+					//$this->load->view('footer');
 	            }
 
 		}

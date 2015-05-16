@@ -38,7 +38,7 @@
 	echo form_label('Colaorador', 'colaborador');
 	echo form_checkbox('colaborador','aceptar', FALSE);echo'<br><br>';
 	
-	echo form_button('registro','Registro');
+	echo form_submit('registro','Registro');
 
 	echo form_close();
 ?>
