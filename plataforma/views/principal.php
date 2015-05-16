@@ -40,13 +40,13 @@
 					        <div class="form-group">
 					          <input type="text" class="form-control" placeholder="Buscar">
 					        </div>
-					        <button type="submit" class="btn btn-default">Buscar</button>
+					        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 					      </form>
-					      <button type="button" class="btn btn-default navbar-btn navbar-right">Carrito</button>
+					      <button type="button" class="btn btn-default navbar-btn navbar-right"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Carrito</button>
 					      <p class="navbar-text navbar-right"></p>
-					      <button type="button" class="btn btn-primary navbar-btn navbar-right">Crear una cuenta</button>
+					      <button type="button" class="btn btn-primary navbar-btn navbar-right"> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Crear una cuenta</button>
 					      <p class="navbar-text navbar-right"></p>
-					      <button type="button" class="btn btn-default navbar-btn navbar-right">Entrar</button>
+					      <button type="button" class="btn btn-default navbar-btn navbar-right"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Entrar</button>
 
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->

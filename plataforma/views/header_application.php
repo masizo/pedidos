@@ -14,7 +14,7 @@
 			      <a class="navbar-brand" href="#">Pedidos Nayarit</a>
 			    </div>
 
-			    
+
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
@@ -38,18 +38,18 @@
 			        <div class="form-group">
 			          <input type="text" class="form-control" placeholder="Buscar">
 			        </div>
-			        <button type="submit" class="btn btn-default">Buscar</button>
+			        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 			      </form>
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Notificaciones</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notificaciones</a></li>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> masizo@gmail.com <span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> masizo@gmail.com <span class="caret"></span></a>
 			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="#">Ver Perfil</a></li>
-			            <li><a href="#">Ver Historial</a></li>
+			            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Ver Perfil</a></li>
+			            <li><a href="#"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Ver Historial</a></li>
 			            
 			            <li class="divider"></li>
-			            <li><a href="#"> Cerrar Sesion </a></li>
+			            <li><a href="#"> <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Cerrar Sesion </a></li>
 			          </ul>
 			        </li>
 			      </ul>

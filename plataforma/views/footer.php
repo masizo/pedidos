@@ -4,7 +4,7 @@
             <div class="row">
               <a href="" target="_blank">
               <div class="large-12 columns centrado seleccion1">
-                  Derechos Reservados
+                  Derechos Reservados @Soluciones Digitales
               </div>
               </a>
  
