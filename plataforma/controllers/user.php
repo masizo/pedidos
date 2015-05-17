@@ -37,6 +37,10 @@ class User extends CI_Controller {
 				$this->form_validation->set_rules('ccontra','Confirmar Contraseña','trim|required|min_length[4]');
 				$this->form_validation->set_rules('correo','Correo','trim|required|valid_email');
 				$this->form_validation->set_rules('estado','Estado','trim|required|min_length[3]');
+				//validacion para checkboxs
+				$this->form_validation->set_rules('Tipouser1','Tipo usuario','trim|callback__checkbox_valid');
+				$this->form_validation->set_rules('Tipouser2','Tipo usuario','trim|callback__checkbox_valid');
+				$this->form_validation->set_rules('Tipouser3','Tipo usuario','trim|callback__checkbox_valid');
 
 				if($this->form_validation->run() === true){
 	    			$nombre = $this->input->post('nombre');
@@ -52,6 +56,28 @@ class User extends CI_Controller {
 					$this->load->view('registro');
 					//$this->load->view('footer');
 	            }
+
+		}
+
+		function _checkbox_valid(){
+			if( $Tipouser1 == 'acceptar' && $Tipouser3 == 'acceptar' && $Tipouser2 == 'acceptar'){
+				$this->form_validation->set_message('checkbox_valid', 'solo puedes escoger entre comprador, vendedor y colaborador o comprador/vendedor');
+				return false;
+			}else if ($Tipouser1 == 'acceptar' && $Tipouser3 == 'acceptar'){
+				$this->form_validation->set_message('checkbox_valid', 'solo puedes escoger entre comprador y colaborador');
+				return false;
+			}else if( $Tipouser3 == 'acceptar' && $Tipouser2 == 'acceptar'){
+				$this->form_validation->set_message('checkbox_valid', 'solo puedes escoger entre vendedor y colaborador');
+				return false;
+			}else if ($Tipouser1 == 'acceptar' && $Tipouser2 == 'acceptar'){
+				return true;
+			}else if($Tipouser1 == 'acceptar'){
+				return true;
+			}else if ($Tipouser2 == 'acceptar') {
+				return true;
+			}else if($Tipouser3 == 'acceptar'){
+				return true;
+			}
 
 		}
 

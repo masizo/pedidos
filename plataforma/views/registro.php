@@ -31,12 +31,16 @@
 	echo form_input('estado'); echo'<br><br>';
 	
 	echo form_label('Tipo', 'tipo');echo'<br>';
+
+	echo form_error('Tipouser1');
+	echo form_error('Tipouser2');
+	echo form_error('Tipouser3');
 	echo form_label('Comprador', 'comprador');
-	echo form_checkbox('comprador','aceptar', FALSE);echo'<br>';
+	echo form_checkbox('Tipouser1','acceptar', FALSE);echo'<br>';
 	echo form_label('Vendedor', 'vendedor');
-	echo form_checkbox('vendedor','aceptar', FALSE);echo'<br>';
+	echo form_checkbox('Tipouser2','acceptar', FALSE);echo'<br>';
 	echo form_label('Colaorador', 'colaborador');
-	echo form_checkbox('colaborador','aceptar', FALSE);echo'<br><br>';
+	echo form_checkbox('Tipouser3','acceptar', FALSE);echo'<br><br>';
 	
 	echo form_submit('registro','Registro');
 
