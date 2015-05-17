@@ -33,10 +33,8 @@
 	echo form_label('Tipo', 'tipo');echo'<br>';
 
 	echo form_error('Tipouser1');
-	echo form_error('Tipouser2');
-	echo form_error('Tipouser3');
 	echo form_label('Comprador', 'comprador');
-	echo form_checkbox('Tipouser1','acceptar', FALSE);echo'<br>';
+	echo form_checkbox('Tipouser1','acceptar', TRUE);echo'<br>';
 	echo form_label('Vendedor', 'vendedor');
 	echo form_checkbox('Tipouser2','acceptar', FALSE);echo'<br>';
 	echo form_label('Colaorador', 'colaborador');
