@@ -45,12 +45,16 @@ class User extends CI_Controller {
 	        		$estado = $this->input->post('estado');
 	        		
 	        		$this->registro_model->registro_usuario($nombre, $contra, $correo, $estado);
+	        		$this->load->view('header');
+	        		$this->load->view('header_application');
 	        		$this->load->view('panel');
+	        		$this->load->view('footer');
 
 	        	} else {	
-	        		//$this->load->view('header');
+	        		$this->load->view('header');
+	        		$this->load->view('header_application');
 					$this->load->view('registro');
-					//$this->load->view('footer');
+					$this->load->view('footer');
 	            }
 
 		}

@@ -11,7 +11,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="#">Pedidos Nayarit</a>
+			      <a class="navbar-brand" href="<? echo base_url(); ?>">Pedidos Nayarit</a>
 			    </div>
 
 

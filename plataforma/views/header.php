@@ -28,6 +28,7 @@
 		<!-- Geekgenier -->
 		<link type="text/css" href="<? echo base_url('folders/css/geekgenier.css'); ?>" rel="Stylesheet" />
 
+		<link rel="stylesheet" href="<? echo base_url('folders/css/proyecto.css'); ?>">
 		
 		
 

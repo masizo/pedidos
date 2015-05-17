@@ -1,21 +1,15 @@
-/*****************************
 
-
+ /*****************************
 Autor: L.I. Jose Luis Moreno Robles;
-Empresa: Geekgenier +52 (311-191-49-79);
+Empresa: Geekgenier +52 (311-130-80-17);
 Licencia: Libre;
 Tepic, Nayarit, México.
 "Usalo con sabiduria".
-
-
 /************* RESET ***********/
-html{
-	width: 97%;
-}
 body{
 	background: ;
 	width: 100%;
-	font-family: 'Rokkitt', serif;
+	font-family: Lato, Helvetica, sans-serif;
 }
 
 a{
@@ -23,16 +17,11 @@ a{
 	color: black;
 }
 
-a:hover{
-	color: grey;
-
-}
-
 ul{
 	list-style-type: none;
 }
 
-.respeto{
+div{
 	box-sizing: border-box;
 }
 
@@ -46,8 +35,39 @@ ul{
 	width: 100%;
 }
 
+.img-logo{
+	width: 90%;
+	transition: all 1s;
+}
+
+.img-logo:hover{
+	width: 50%;
+	transition: all 1s;
+}
+
 .fondo{
-	background: grey;
+	background: #2c2929;
+}
+
+.logo{
+	background: url(../images/placeholder/logo_aeo.png) no-repeat;
+	height: 60px;
+	transition: 1s;	
+}
+
+
+.cabecera{
+	background-image: url(../imagenes/cabecera.jpg);
+	background-position: center;
+}
+.image2{
+	background-image: url(../images/index-2.jpg);
+}
+.image3{
+	background-image: url(../images/index-3.jpg);
+}
+.image4{
+	background-image: url(../images/index-4.jpg);
 }
 
 
@@ -65,6 +85,17 @@ background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0
 background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 border: 0;
+}
+
+.separador{
+	height: 2px;
+	margin: 54px 0;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	border: 0;
+
 }
 /********************************************************************************/
 
@@ -128,11 +159,16 @@ border: 0;
 	color: black;
 }
 
+.naranja{
+	color: orange;
+}
+
 .gris{
 	color: grey;
 }
 
-.grande{font-size: 1.3em;}
+.grande{font-size: 1.4em;}
+.mediano{font-size: 1.2em;}
 
 
 .titulo{
@@ -152,12 +188,6 @@ border: 0;
 	font-family: 'Fauna One', cursive;
 	font-size: 1.1em;
 	text-align: center;
-}
-
-.titulo4{
-	font-family: 'Fauna One', cursive;
-	font-size: 1em;
-	text-align: left;
 }
 
 .centrado{text-align: center;}
@@ -205,6 +235,22 @@ border: 0;
 	background: white;
 }
 
+.fixed{
+	position: fixed;
+}
+
+.azul{
+	color: #0099ff;
+}
+
+.fondoblanco{
+	background: rgba(255,255,255,0.5);
+}
+
+.fondonegro{
+	background: rgba(0,0,0,0.5);
+}
+
  			/******** Altos   ********/
 
  			.hauto{height: auto;}
@@ -227,8 +273,14 @@ border: 0;
  			.h180{height: 180px;}
  			.h200{height: 200px;}
 
+ 			.h220{height: 220px;}
+ 			.h240{height: 240px;}
  			.h250{height: 250px;}
+ 			.h260{height: 260px;}
+ 			.h280{height: 280px;}
  			.h300{height: 300px;}
+
+ 			
  			.h350{height: 350px;}
  			.h400{height: 400px;}
  			.h450{height: 450px;}
@@ -372,6 +424,8 @@ border: 0;
 
  			/******* Margenes *******/
 
+ 			.m-10{margin-top: -10px;}
+
  			.m1{margin-top: 1px;}
  			.m2{margin-top: 2px;}
  			.m4{margin-top: 4px;}
@@ -436,15 +490,6 @@ border: 0;
  			.mb300{margin-bottom: 300px;}
 
 
- 			/******* Padding *******/
-
- 			.p1{padding: 1px;}
- 			.p2{padding: 2px;}
- 			.p4{padding: 4px;}
- 			.p6{padding: 6px;}
- 			.p8{padding: 8px;}
- 			.p10{padding: 10px;}
-
  			.p10{padding: 10px;}
  			.p20{padding: 20px;}
  			.p40{padding: 40px;}
@@ -458,69 +503,6 @@ border: 0;
  			.p180{padding: 180px;}
  			.p200{padding: 200px;}
  			.p300{padding: 300px;}
-
- 			.pt1{padding-top: 1px;}
- 			.pt2{padding-top: 2px;}
- 			.pt4{padding-top: 4px;}
- 			.pt6{padding-top: 6px;}
- 			.pt8{padding-top: 8px;}
- 			.pt10{padding-top: 10px;}
-
- 			.pt10{padding-top: 10px;}
- 			.pt20{padding-top: 20px;}
- 			.pt40{padding-top: 40px;}
- 			.pt60{padding-top: 60px;}
- 			.pt80{padding-top: 80px;}
- 			.pt100{padding-top: 100px;}
- 			.pt120{padding-top: 120px;}
- 			.pt130{padding-top: 130px;}
- 			.pt140{padding-top: 140px;}
- 			.pt160{padding-top: 160px;}
- 			.pt180{padding-top: 180px;}
- 			.pt200{padding-top: 200px;}
- 			.pt300{padding-top: 300px;}
-
- 			.pl10{padding-left: 10px;}
- 			.pl20{padding-left: 20px;}
- 			.pl40{padding-left: 40px;}
- 			.pl60{padding-left: 60px;}
- 			.pl80{padding-left: 80px;}
- 			.pl100{padding-left: 100px;}
- 			.pl120{padding-left: 120px;}
- 			.pl130{padding-left: 130px;}
- 			.pl140{padding-left: 140px;}
- 			.pl160{padding-left: 160px;}
- 			.pl180{padding-left: 180px;}
- 			.pl200{padding-left: 200px;}
- 			.pl300{padding-left: 300px;}
-
- 			.pr10{padding-right: 10px;}
- 			.pr20{padding-right: 20px;}
- 			.pr40{padding-right: 40px;}
- 			.pr60{padding-right: 60px;}
- 			.pr80{padding-right: 80px;}
- 			.pr100{padding-right: 100px;}
- 			.pr120{padding-right: 120px;}
- 			.pr130{padding-right: 130px;}
- 			.pr140{padding-right: 140px;}
- 			.pr160{padding-right: 160px;}
- 			.pr180{padding-right: 180px;}
- 			.pr200{padding-right: 200px;}
- 			.pr300{padding-right: 300px;}
-
- 			.pb10{padding-bottom: 10px;}
- 			.pb20{padding-bottom: 20px;}
- 			.pb40{padding-bottom: 40px;}
- 			.pb60{padding-bottom: 60px;}
- 			.pb80{padding-bottom: 80px;}
- 			.pb100{padding-bottom: 100px;}
- 			.pb120{padding-bottom: 120px;}
- 			.pb130{padding-bottom: 130px;}
- 			.pb140{padding-bottom: 140px;}
- 			.pb160{padding-bottom: 160px;}
- 			.pb180{padding-bottom: 180px;}
- 			.pb200{padding-bottom: 200px;}
- 			.pb300{padding-bottom: 300px;}
 
 
 
@@ -595,11 +577,5 @@ border: 0;
 		75%{opacity: .8;}
 		100%{opacity: 1;}
 	}
-
-
-
-
-
-
 
 
