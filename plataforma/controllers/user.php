@@ -38,16 +38,15 @@ class User extends CI_Controller {
 				$this->form_validation->set_rules('correo','Correo','trim|required|valid_email');
 				$this->form_validation->set_rules('estado','Estado','trim|required|min_length[3]');
 				//validacion para checkboxs
-				$this->form_validation->set_rules('Tipouser1','Tipo usuario','trim|callback__checkbox_valid');
-				$this->form_validation->set_rules('Tipouser2','Tipo usuario','trim|callback__checkbox_valid');
-				$this->form_validation->set_rules('Tipouser3','Tipo usuario','trim|callback__checkbox_valid');
-
+				$this->form_validation->set_rules('Tipouser1','Tipo usuario','trim|callback_checkbox_valid');
+				
 				if($this->form_validation->run() === true){
 	    			$nombre = $this->input->post('nombre');
 	        		$contra = $this->input->post('contra');
 	        		$correo = $this->input->post('correo');
 	        		$estado = $this->input->post('estado');
-	        		
+
+	        		$this->registro_model->registro_tipouser($Tipouser1, $Tipouser2, $Tipouser3);
 	        		$this->registro_model->registro_usuario($nombre, $contra, $correo, $estado);
 	        		$this->load->view('panel');
 
@@ -59,8 +58,15 @@ class User extends CI_Controller {
 
 		}
 
-		function _checkbox_valid(){
-			if( $Tipouser1 == 'acceptar' && $Tipouser3 == 'acceptar' && $Tipouser2 == 'acceptar'){
+		function checkbox_valid(){
+					
+					$Tipouser1 = $this->input->post('Tipouser1');
+	        		$Tipouser2 = $this->input->post('Tipouser2');
+	        		$Tipouser3 = $this->input->post('Tipouser3');
+	        //chacar validacion en caso de no escoger tipo de usuario
+	        if($Tipouser1 == null && $Tipouser3 == null && $Tipouser2 == null){
+				$this->form_validation->set_message('checkbox_valid', 'Debes escoger que tipo de usuario seras');
+	        }else if( $Tipouser1 == 'acceptar' && $Tipouser3 == 'acceptar' && $Tipouser2 == 'acceptar'){
 				$this->form_validation->set_message('checkbox_valid', 'solo puedes escoger entre comprador, vendedor y colaborador o comprador/vendedor');
 				return false;
 			}else if ($Tipouser1 == 'acceptar' && $Tipouser3 == 'acceptar'){
