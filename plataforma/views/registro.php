@@ -8,6 +8,7 @@
 
 <!--  inicio formulario   -->
 <?php
+	echo $Tipouser1;
 	echo form_open('user/registro');
 
 	echo form_error('nombre');

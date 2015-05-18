@@ -43,7 +43,11 @@
                   </form>
                   <button type="button" class="btn btn-default navbar-btn navbar-right"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Carrito</button>
                   <p class="navbar-text navbar-right"></p>
+                  <p class="navbar-text navbar-right"></p>
+                  <a href="<? echo base_url('user/registro'); ?>">
                   <button type="button" class="btn btn-primary navbar-btn navbar-right"> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Crear una cuenta</button>
+                  </a>
+                  
                   <p class="navbar-text navbar-right"></p>
                   <button type="button" class="btn btn-default navbar-btn navbar-right"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Entrar</button>
 

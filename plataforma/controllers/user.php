@@ -58,6 +58,7 @@ class User extends CI_Controller {
 	        		$this->load->view('header_application');
 					$this->load->view('registro');
 					$this->load->view('footer');
+
 	            }
 
 		}
@@ -68,8 +69,9 @@ class User extends CI_Controller {
 	        		$Tipouser2 = $this->input->post('Tipouser2');
 	        		$Tipouser3 = $this->input->post('Tipouser3');
 	        //chacar validacion en caso de no escoger tipo de usuario
-	        if($Tipouser1 == null && $Tipouser3 == null && $Tipouser2 == null){
+	        if($Tipouser1 != 'acceptar' && $Tipouser3 != "acceptar" && $Tipouser2 != "acceptar"){
 				$this->form_validation->set_message('checkbox_valid', 'Debes escoger que tipo de usuario seras');
+				return false;
 	        }else if( $Tipouser1 == 'acceptar' && $Tipouser3 == 'acceptar' && $Tipouser2 == 'acceptar'){
 				$this->form_validation->set_message('checkbox_valid', 'solo puedes escoger entre comprador, vendedor y colaborador o comprador/vendedor');
 				return false;
