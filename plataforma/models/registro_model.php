@@ -10,29 +10,29 @@ function registro_usuario($nombre, $contra, $correo, $estado){
 		 );
 	return $this->db->insert('usuario',$reg);
 }
-
+/* 	
 function registro_tipouser($datid){
 	$idmax  = array(
-		'id' => $datid,
+		'id_usuario' => $datid,
 		
-	$this->db->insert('comprador',$idmax);
-	return;
+	return $this->db->insert('comprador',$idmax);
+	
 }
 
 function registro_tipouser2($datid){
 	$idmax  = array(
-		'id' => $datid,
+		'id_usuario' => $datid,
 	
-	$this->db->insert('vendedor',$idmax);
-	return;
+	return $this->db->insert('vendedor',$idmax);
+	
 }
 
 function registro_tipouser3($datid){
 	$idmax  = array(
-		'id' => $datid,
+		'id_usuario' => $datid,
 	
-	$this->db->insert('colaborador',$idmax);
-	return;
+	return $this->db->insert('colaborador',$idmax);
+	
 }
 
 /*

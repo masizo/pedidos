@@ -61,6 +61,7 @@ class User extends CI_Controller {
 					}else if($Tipouser3 == 'acceptar'){
 						$this->registro_model->registro_tipouser3($datid);
 					}
+					
 
 	        		$this->load->view('header');
 	        		$this->load->view('header_application');
