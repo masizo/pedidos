@@ -11,23 +11,34 @@ function registro_usuario($nombre, $contra, $correo, $estado){
 	return $this->db->insert('usuario',$reg);
 }
 
-function registro_tipouser($Tipouser1, $Tipouser2, $Tipouser3){
-	// pendiente...  me parece ke habra un conflicto
-
-	if($Tipouser1=='acceptar' && $Tipouser2=='acceptar'){
-		return $this->db->insert('comprador',$id);
-	}else if($Tipouser1=='acceptar'){
-		return $this->db->insert('comprador',$id);
-	}else if($Tipouser2=='acceptar'){
-		return $this->db->insert('vendedor',$id);
-	}else if($Tipouser3=='acceptar'){
-		return $this->db->insert('colaborador',$id);
-	}
+function registro_tipouser($datid){
+	$idmax  = array(
+		'id' => $datid,
+		
+	$this->db->insert('comprador',$idmax);
+	return;
 }
 
+function registro_tipouser2($datid){
+	$idmax  = array(
+		'id' => $datid,
+	
+	$this->db->insert('vendedor',$idmax);
+	return;
+}
 
+function registro_tipouser3($datid){
+	$idmax  = array(
+		'id' => $datid,
+	
+	$this->db->insert('colaborador',$idmax);
+	return;
+}
 
-
+/*
+ERROR - 2015-05-18 06:42:26 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\pedidos\general\core\Common.php 257
+ERROR - 2015-05-18 06:42:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\pedidos\general\database\drivers\mysql\mysql_driver.php 91
+*/
 
 
 }

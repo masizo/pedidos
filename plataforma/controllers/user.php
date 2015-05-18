@@ -46,8 +46,22 @@ class User extends CI_Controller {
 	        		$correo = $this->input->post('correo');
 	        		$estado = $this->input->post('estado');
 
-	        		$this->registro_model->registro_tipouser($Tipouser1, $Tipouser2, $Tipouser3);
 	        		$this->registro_model->registro_usuario($nombre, $contra, $correo, $estado);
+	        		
+	        		$this->db->select_max('id');
+					$datid = $this->db->get('usuario');	
+					
+					if ($Tipouser1 == 'acceptar' && $Tipouser2 == 'acceptar'){
+						$this->registro_model->registro_tipouser($datid);
+						$this->registro_model->registro_tipouser2($datid);
+					}else if($Tipouser1 == 'acceptar'){
+						$this->registro_model->registro_tipouser($datid);
+					}else if ($Tipouser2 == 'acceptar') {
+						$this->registro_model->registro_tipouser2($datid);
+					}else if($Tipouser3 == 'acceptar'){
+						$this->registro_model->registro_tipouser3($datid);
+					}
+
 	        		$this->load->view('header');
 	        		$this->load->view('header_application');
 	        		$this->load->view('panel');
@@ -68,7 +82,7 @@ class User extends CI_Controller {
 					$Tipouser1 = $this->input->post('Tipouser1');
 	        		$Tipouser2 = $this->input->post('Tipouser2');
 	        		$Tipouser3 = $this->input->post('Tipouser3');
-	        //chacar validacion en caso de no escoger tipo de usuario
+	        //checar validacion en caso de no escoger tipo de usuario-----  es con doble comilla?
 	        if($Tipouser1 != 'acceptar' && $Tipouser3 != "acceptar" && $Tipouser2 != "acceptar"){
 				$this->form_validation->set_message('checkbox_valid', 'Debes escoger que tipo de usuario seras');
 				return false;
