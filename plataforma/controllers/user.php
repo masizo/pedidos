@@ -45,24 +45,12 @@ class User extends CI_Controller {
 	        		$contra = $this->input->post('contra');
 	        		$correo = $this->input->post('correo');
 	        		$estado = $this->input->post('estado');
+	        		$Tipouser1 = $this->input->post('Tipouser1');
+	        		$Tipouser2 = $this->input->post('Tipouser2');
+	        		$Tipouser3 = $this->input->post('Tipouser3');
 
-	        		$this->registro_model->registro_usuario($nombre, $contra, $correo, $estado);
+	        		$this->registro_model->registro_usuario($nombre, $contra, $correo, $estado, $Tipouser1, $Tipouser2, $Tipouser3);
 	        		
-	        		$this->db->select_max('id');
-					$datid = $this->db->get('usuario');	
-					
-					if ($Tipouser1 == 'acceptar' && $Tipouser2 == 'acceptar'){
-						$this->registro_model->registro_tipouser($datid);
-						$this->registro_model->registro_tipouser2($datid);
-					}else if($Tipouser1 == 'acceptar'){
-						$this->registro_model->registro_tipouser($datid);
-					}else if ($Tipouser2 == 'acceptar') {
-						$this->registro_model->registro_tipouser2($datid);
-					}else if($Tipouser3 == 'acceptar'){
-						$this->registro_model->registro_tipouser3($datid);
-					}
-					
-
 	        		$this->load->view('header');
 	        		$this->load->view('header_application');
 	        		$this->load->view('panel');
