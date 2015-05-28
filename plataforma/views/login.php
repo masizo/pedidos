@@ -17,7 +17,7 @@
         <div class="container">			
 			<section class="main">
 				<form method="POST" class="form-2">
-			    <?php echo form_open('admin/login');?>
+			    <?php echo form_open('user/login');?>
 					<h1><span class="sign-up">Iniciar Sesion</span></h1>
 					<p class="float">
 						<label for="login"><i class="icon-user"></i>Usuario</label>

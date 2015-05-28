@@ -7,6 +7,7 @@ class User extends CI_Controller {
 		$this->load->library('grocery_CRUD');
 		$this->load->library('encrypt');		
 		$this->load->model('usuarios_model');
+		$this->load->model('registro_model');
    	}
 
    	function index()
@@ -95,6 +96,45 @@ class User extends CI_Controller {
 			}
 
 		}
+
+
+function login(){
+	 if($this->registro_model->galleta() == FALSE){
+	        setcookie("SIE_cook", "", time() + 0, "/");
+			setcookie("SIE_SESC", "", time() + 0, "/"); 		
+			setcookie("conf_det", '', time() + 0, "/");
+		if(!isset($_POST['userlogin'])){	
+			$this->load->view('login');			
+		}else{								
+			$this->form_validation->set_rules('userlogin','usuario','required|min_length[6]|max_length[12]');
+			$this->form_validation->set_rules('passwordlogin','contraseña','required|min_length[8]|max_length[15]');
+			if(($this->form_validation->run()==FALSE)){				
+				$this->load->view('login');
+			}
+			else{
+				$passwordlogin = $_POST['passwordlogin'];
+				$userlogin = $_POST['userlogin'];
+				$user = $this->encrypt->encode($userlogin, 'hashcat');
+				$pass = $this->encrypt->encode($passwordlogin, 'hashcat');
+				$ExisteUsuarioyPassword = $this->registro_model->ValidarUsuario(md5($userlogin),md5($passwordlogin));
+				if($ExisteUsuarioyPassword == TRUE){
+                    setcookie("SIE_cook", $user, time() + 86400, "/");
+        			setcookie("SIE_SESC", $pass, time() + 86400, "/"); 
+        			setcookie("conf_det", '1', time() + 86400, "/");
+        			redirect(base_url());           				    
+				}else{
+					$data['error']="usuario o contraseña incorrecta, vuelva a intentar";					
+					$this->load->view('login',$data);					
+				}
+			}
+		}
+	 }else{
+	  redirect(base_url());
+	 }     
+}
+
+
+
 
 
 }
